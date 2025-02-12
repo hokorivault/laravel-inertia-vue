@@ -1,19 +1,11 @@
 # Laravel 11 Inertia Vue NO Starter Kit
-A basic barebones boilerplate / template or whatever you call it of a Laravel Inertia Vue project NO Starter Kit
-
-### Clone this project
-```
-git clone https://github.com/hokorivault/laravel-inertia-vue.git
-```
+A basic Laravel Inertia Vue project NO Starter Kit reference / example
 
 ### Project setup
 ```
+git clone https://github.com/hokorivault/laravel-inertia-vue.git
 cd laravel-inertia-vue
 npm install
-```
-
-### Update / Install composer
-```
 composer update
 ```
 
@@ -21,20 +13,18 @@ composer update
 
 ### Create a MySQL database
 ```
-laravel-inertia-vue.sql
+mysql> CREATE DATABASE laravel-inertia-vue CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
-
-### Set collation to
-```
-utf8mb4_unicode_ci
-```
-
-And then,
+Dont forget to run
 ```
 php artisan migrate
 ```
 
-### Run the web server
+### Vite / Vue - apply changes before viewing in browser
+```
+npm run dev
+```
+### Run Laravel web server
 ```
 php artisan serve
 ```
